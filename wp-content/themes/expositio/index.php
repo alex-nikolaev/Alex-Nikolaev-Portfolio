@@ -24,7 +24,7 @@ get_header(); ?>
 			<?php echo expositio_image_tag(get_post_thumbnail_id()); ?>
 		</a>
 		<?php if (get_the_title() != ''): ?>
-		<div>
+		<div class="gallery-post-title">
 			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		</div>
 		<?php endif; ?>

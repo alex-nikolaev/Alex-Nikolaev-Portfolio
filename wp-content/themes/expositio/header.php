@@ -51,7 +51,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 				<h6 class="site-description"><?php bloginfo('description'); ?></h6>
-				<h1 class="menu-toggle">m</h1>
+				<h1 class="menu-toggle">☰</h1>
 				<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
 					<a class="screen-reader-text skip-link" href="#content"><?php _e('Skip to content', 'expositio'); ?></a>
 					<span id="navigation-close">&#10005;</span>
@@ -68,7 +68,7 @@
 						);
 						?>
 					</div>--><!-- .site-info -->
-					<div class="copyright">&#169; 2014</div>
+					<div class="copyright">&#169; <?php echo date("Y"); ?></div>
 				</footer><!-- #colophon -->
 			</header><!-- #masthead -->
 			<div id="header-helper"></div>

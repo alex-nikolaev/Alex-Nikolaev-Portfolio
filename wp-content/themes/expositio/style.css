@@ -66,7 +66,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0;
     font-family: inherit;
-    font-size: 100%;
+    font-size: 1.8rem;
     font-style: inherit;
     font-weight: inherit;
     margin: 0;
@@ -102,7 +102,12 @@ body, button, input, select, textarea {
 }
 body {
     height: 100%;
-    background: #fff;
+    background-color: #fff;
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 a {
     color: #222223;
@@ -392,9 +397,9 @@ hr {
 
 @font-face {
     /*font-family: expositio;
-	src: url("fonts/expositio.eot?") format("eot"), url("fonts/expositio.woff") format("woff"), url("fonts/expositio.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;*/
+    src: url("fonts/expositio.eot?") format("eot"), url("fonts/expositio.woff") format("woff"), url("fonts/expositio.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;*/
     
     font-family: 'Abel', sans-serif;
 }
@@ -425,6 +430,13 @@ button, .contributor-posts-link, input[type="button"], input[type="reset"], inpu
     margin-bottom: 3px;
     margin-bottom: 0.3rem;
     vertical-align: bottom;
+}
+div.gallery-post-title {
+    margin-left: 10px;
+}
+div.gallery-post-title a {
+    display: inline-grid;
+    line-height: 24px;
 }
 button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
     background-color: #333;
@@ -733,7 +745,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {
     min-height: 32px;
 }
 .site-header {
-    background: #fff;
+    /*background: #fff;*/
 }
 .site-title {
     margin: 0;
@@ -785,7 +797,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {
     
     font-family: 'Abel', sans-serif;
     font-size: 30px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 30px;
     line-height: 3rem;
     cursor: pointer;
@@ -854,7 +866,9 @@ body.home .post-thumbnail {
 
 body.single .entry-header, body.page .entry-header, .page-header {
     margin-bottom: 20px;
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
+    
+    margin-bottom: 0px;
 }
 .entry-title, .page-title {
     margin: 0;
@@ -862,7 +876,7 @@ body.single .entry-header, body.page .entry-header, .page-header {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 28px;
-    line-height: 2.8rem;
+    line-height: 2.3rem;
     word-wrap: break-word;
     white-space: pre-wrap;
 }
@@ -986,8 +1000,8 @@ body.single .entry-header, body.page .entry-header, .page-header {
  */
 
 .site-description {
-    margin-top: 0px !important;
-    font-size: 15px !important;
+    margin-top: -6px !important;
+    font-size: 14px !important;
 }
 .site-footer {
     position: absolute;
@@ -1036,6 +1050,7 @@ body.single .entry-header, body.page .entry-header, .page-header {
         height: 100%;
         padding: 40px 30px 0;
         padding: 4rem 3rem 0;
+        background-color: #fff;
     }
     body.admin-bar .site-header {
         top: 32px;
@@ -1088,7 +1103,7 @@ body.single .entry-header, body.page .entry-header, .page-header {
     body.single .hentry {
         padding-bottom: 40px;
         padding-bottom: 4rem;
-        max-width: 620px;
+        max-width: 320px;
     }
     body.page .hentry, .page-content {
         padding-bottom: 40px;
@@ -1141,6 +1156,10 @@ body.single .entry-header, body.page .entry-header, .page-header {
         margin-top: 20px;
         margin-top: 2rem;
     }
+    #menu-main-nav {
+        position: absolute;
+        bottom: 5%;
+    }
     .site-navigation > div > ul > li.menu-item-has-children {
         margin-top: 20px;
         margin-top: 2rem;
@@ -1173,6 +1192,8 @@ body.single .entry-header, body.page .entry-header, .page-header {
         line-height: 35px;
         line-height: 3.5rem;
         color: #222223;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     .primary-navigation a:hover {
         border-bottom: 1px solid #fff;
@@ -1232,6 +1253,11 @@ body.single .entry-header, body.page .entry-header, .page-header {
     .site-footer {
         padding-top: 30px;
         padding-top: 3rem;
+    }
+}
+@media (max-width: 450px) {
+    body {
+        background-size: cover;
     }
 }
 /**
